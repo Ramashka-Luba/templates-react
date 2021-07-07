@@ -1,0 +1,36 @@
+@mixin size($w, $h:$w) {
+	width: $w;
+	height: $h;
+}
+@mixin font2($font-size,$line-height,) {
+	font-size:$font-size ;
+	line-height:$line-height;
+}
+
+@mixin font3($font-size,$line-height,$font-family) {
+	font-size:$font-size ;
+	line-height:$line-height;
+	font-family:$font-family;
+}
+
+@mixin font4($font-size,$line-height,$font-family,$color) {
+	font-size:$font-size ;
+	line-height:$line-height;
+	font-family:$font-family;
+	color: $color;
+}
+
+@mixin font5($font-size,$line-height,$font-family,$color,$text-align) {
+	font-size:$font-size ;
+	line-height:$line-height;
+	font-family:$font-family;
+	color: $color;
+	text-align:$text-align;
+}
+
+@mixin flex-j-a($value1,$value2,$value3:row){
+	display: flex;
+	align-items: $value1;
+	justify-content: $value2;
+	flex-direction: $value3;
+}

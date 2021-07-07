@@ -1,0 +1,59 @@
+// font-weight:100 / Thin
+// font-weight:200 / Extra
+// font-weight:300 / Light
+// font-weight:400 / Normal
+// font-weight:500 / Medium
+// font-weight:600 / Semi Bold
+// font-weight:700 / Bold
+// font-weight:800 / Extra Bold
+// font-weight:900 / Black
+
+@import "./../abstracts/variables/variables";
+
+@font-face {
+	font-family: 'PoppinsRegular';
+	src: url('#{$way-fonts}/Poppins-Regular.eot');
+	src:local('Poppins-Regular'),
+		 url('#{$way-fonts}/Poppins-Regular.eot') format('embedded-opentype'),
+		 url('#{$way-fonts}/Poppins-Regular.woff2') format('woff2'),
+		 url('#{$way-fonts}/Poppins-Regular.woff') format('woff'),
+		 url('#{$way-fonts}/Poppins-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsMedium';
+	src: url('#{$way-fonts}/Poppins-Medium.eot');
+	src: local('Poppins-Medium'),
+		 url('#{$way-fonts}/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/Poppins-Medium.woff2') format('woff2'),
+		 url('#{$way-fonts}/Poppins-Medium.woff') format('woff'),
+		 url('#{$way-fonts}/Poppins-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsSemiBold';
+	src: url('#{$way-fonts}/Poppins-SemiBold.eot');
+	src: local('SFProDisplay-Medium'),
+		 url('#{$way-fonts}/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/Poppins-SemiBold.woff2') format('woff2'),
+		 url('#{$way-fonts}/Poppins-SemiBold.woff') format('woff'),
+		 url('#{$way-fonts}/Poppins-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PoppinsBold';
+	src: url('#{$way-fonts}/Poppins-Bold.eot');
+	src: local('SFProDisplay-Regular'),
+		 url('#{$way-fonts}/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/Poppins-Bold.woff2') format('woff2'),
+		 url('#{$way-fonts}/Poppins-Bold.woff') format('woff'),
+		 url('#{$way-fonts}/Poppins-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}

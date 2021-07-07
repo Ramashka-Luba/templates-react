@@ -1,3 +1,19 @@
+/*-base- Подключаем скаченные шрифты -*/
+@import "./scss/base/fonts";
+
+/*-variable-*/
+@import "./scss/abstracts/variables/variables";
+
+/*-mixins-*/
+@import "./scss/abstracts/mixins/mixins";
+
+/*-elements-*/
+@import "./scss/abstracts/elements/elements";
+
+
+
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +52,5 @@
     transform: rotate(360deg);
   }
 }
+
+

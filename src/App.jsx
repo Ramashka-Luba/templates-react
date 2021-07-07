@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import s from './App.module.scss';
 
-function App() {
+// хз для чего это новезде пишется
+import React from "react";
+
+// function App() {        //Старый синтаксис
+export const App = () => { //Стрелочная функция
   return (
     <div className={s.App}>
       <header className={s.AppHeader}>
@@ -22,4 +26,5 @@ function App() {
   );
 }
 
+// Походу в стрелочной функции не должно быть, но без нее не работает
 export default App;
