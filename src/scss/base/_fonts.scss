@@ -14,10 +14,10 @@
 	font-family: 'PoppinsRegular';
 	src: url('#{$way-fonts}/Poppins-Regular.eot');
 	src:local('Poppins-Regular'),
-		 url('#{$way-fonts}/Poppins-Regular.eot') format('embedded-opentype'),
-		 url('#{$way-fonts}/Poppins-Regular.woff2') format('woff2'),
-		 url('#{$way-fonts}/Poppins-Regular.woff') format('woff'),
-		 url('#{$way-fonts}/Poppins-Regular.ttf') format('truetype');
+	url('#{$way-fonts}/Poppins-Regular.eot') format('embedded-opentype'),
+	url('#{$way-fonts}/Poppins-Regular.woff2') format('woff2'),
+	url('#{$way-fonts}/Poppins-Regular.woff') format('woff'),
+	url('#{$way-fonts}/Poppins-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -26,10 +26,10 @@
 	font-family: 'PoppinsMedium';
 	src: url('#{$way-fonts}/Poppins-Medium.eot');
 	src: local('Poppins-Medium'),
-		 url('#{$way-fonts}/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
-		 url('#{$way-fonts}/Poppins-Medium.woff2') format('woff2'),
-		 url('#{$way-fonts}/Poppins-Medium.woff') format('woff'),
-		 url('#{$way-fonts}/Poppins-Medium.ttf') format('truetype');
+	url('#{$way-fonts}/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+	url('#{$way-fonts}/Poppins-Medium.woff2') format('woff2'),
+	url('#{$way-fonts}/Poppins-Medium.woff') format('woff'),
+	url('#{$way-fonts}/Poppins-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
@@ -38,10 +38,10 @@
 	font-family: 'PoppinsSemiBold';
 	src: url('#{$way-fonts}/Poppins-SemiBold.eot');
 	src: local('SFProDisplay-Medium'),
-		 url('#{$way-fonts}/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
-		 url('#{$way-fonts}/Poppins-SemiBold.woff2') format('woff2'),
-		 url('#{$way-fonts}/Poppins-SemiBold.woff') format('woff'),
-		 url('#{$way-fonts}/Poppins-SemiBold.ttf') format('truetype');
+	url('#{$way-fonts}/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+	url('#{$way-fonts}/Poppins-SemiBold.woff2') format('woff2'),
+	url('#{$way-fonts}/Poppins-SemiBold.woff') format('woff'),
+	url('#{$way-fonts}/Poppins-SemiBold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
 }
@@ -50,10 +50,10 @@
 	font-family: 'PoppinsBold';
 	src: url('#{$way-fonts}/Poppins-Bold.eot');
 	src: local('SFProDisplay-Regular'),
-		 url('#{$way-fonts}/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
-		 url('#{$way-fonts}/Poppins-Bold.woff2') format('woff2'),
-		 url('#{$way-fonts}/Poppins-Bold.woff') format('woff'),
-		 url('#{$way-fonts}/Poppins-Bold.ttf') format('truetype');
+	url('#{$way-fonts}/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+	url('#{$way-fonts}/Poppins-Bold.woff2') format('woff2'),
+	url('#{$way-fonts}/Poppins-Bold.woff') format('woff'),
+	url('#{$way-fonts}/Poppins-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
