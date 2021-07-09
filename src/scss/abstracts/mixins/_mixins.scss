@@ -2,6 +2,13 @@
 	width: $w;
 	height: $h;
 }
+
+@mixin text($fontSize, $fontWeight, $lineHeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+}
+
 @mixin font2($font-size,$line-height,) {
 	font-size:$font-size ;
 	line-height:$line-height;

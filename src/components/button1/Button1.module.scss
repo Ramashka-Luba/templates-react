@@ -1,0 +1,84 @@
+@import "./../../scss/abstracts/elements/elements";
+@import "./../../scss/abstracts/mixins/mixins";
+@import "./../../scss/abstracts/variables/variables";
+
+.button {
+    margin: 20px;
+
+    max-width: 315px;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    @include text (26px, 500, 39px);
+    cursor: pointer;
+
+    z-index: 1;
+    position: relative;
+}
+.span {}
+
+.button::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: red;
+
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    mix-blend-mode: hue;
+
+    transition: 500ms ease;
+}
+
+.button::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: pink;
+
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    mix-blend-mode: hue;
+
+    transition: 500ms ease;
+}
+
+.span::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    mix-blend-mode: hue;
+
+    transition: 500ms ease;
+}
+
+.span::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: pink;
+
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    mix-blend-mode: hue;
+
+    transition: 500ms ease;
+}
+
+.button:hover::before,
+.button:hover::after,
+.button:hover span::before,
+.button:hover span::after 
+{
+    width: 152px;
+    height: 30px;
+}

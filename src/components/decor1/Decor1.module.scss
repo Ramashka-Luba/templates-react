@@ -1,0 +1,50 @@
+@import "./../../scss/abstracts/elements/elements";
+@import "./../../scss/abstracts/mixins/mixins";
+@import "./../../scss/abstracts/variables/variables";
+
+.decor {
+margin-top: 70px;
+
+    max-width: 710px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shape1 {
+    width: 50px;
+    height: 50px;
+
+    animation-name: moveBall1;
+    animation-duration: 3s; 
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes moveBall1 {
+    50% {
+        transform: translate(0, 50px);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+} 
+
+.shape2 {
+    width: 50px;
+    height: 50px;
+
+    animation-name: moveBall2;
+    animation-duration: 3s; 
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes moveBall2 {
+    50% {
+        transform: translate(0, -50px);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
