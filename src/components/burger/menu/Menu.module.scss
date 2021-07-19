@@ -1,20 +1,27 @@
 .menu {
-    position: relative;
+    position: fixed;
     width: 100vw;
     height: 100vh;
-    top:50px;
+    top:  50px;
     left: 0;
 
-    transform: translate(-130%);
-    transition: all 2s;
+    transform: translateX(-130%);
+    transition: all 0.7s;
 }
-.menu.active {
-    transform: translate(0);
+.menuActive {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:  50px;
+    left: 0;
+    transform: translateX(0);
+    transition: all 0.4s;
+
 }
 .blur {
     width: 100vw;
     height: 100vh;
-    backdrop-filter: blur (2px);
+    backdrop-filter: blur(2px); 
     position: absolute;
     left: 30%;
 }
@@ -51,10 +58,10 @@ ul li {
     align-items: center;
     margin: 10px 0;
 }
-.materialIcons {
-    color:white;
-    margin-left: 10px;
-}
+// .materialIcons {
+//     color:white;
+//     margin-left: 10px;
+// }
 @media screen and (max-width : 768px) {
     .menuContent {
         width: 100%;

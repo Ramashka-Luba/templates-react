@@ -2,16 +2,7 @@
 @import "./../../scss/abstracts/mixins/mixins";
 @import "./../../scss/abstracts/variables/variables";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.burger {
-  background-color: white;
-  margin-top: 60px;
-}
-.nav {
+nav {
   height: 50px;
   width: 100%;
   background-color: gray;
@@ -20,14 +11,13 @@
   display: flex;
   align-items: center;
 }
-.main {
-  padding: 20px;
+main {
+  padding: 50px;
 }
 p {
   margin: 20px;
 }
 .burgerBtn {
-  top: 10px;
   width: 20px;
   height: 20px;
   margin-left: 20px;
