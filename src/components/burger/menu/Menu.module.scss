@@ -1,0 +1,66 @@
+.menu {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top:50px;
+    left: 0;
+
+    transform: translate(-130%);
+    transition: all 2s;
+}
+.menu.active {
+    transform: translate(0);
+}
+.blur {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur (2px);
+    position: absolute;
+    left: 30%;
+}
+.menuContent {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s;
+}
+.menuHeader {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: center;
+}
+ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 13px;
+}
+ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.materialIcons {
+    color:white;
+    margin-left: 10px;
+}
+@media screen and (max-width : 768px) {
+    .menuContent {
+        width: 100%;
+    }
+    .blur {
+        backdrop-filter: none;
+    }
+}
+    

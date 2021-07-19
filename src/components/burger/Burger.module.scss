@@ -1,0 +1,59 @@
+@import "./../../scss/abstracts/elements/elements";
+@import "./../../scss/abstracts/mixins/mixins";
+@import "./../../scss/abstracts/variables/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.burger {
+  background-color: white;
+  margin-top: 60px;
+}
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: gray;
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+}
+.main {
+  padding: 20px;
+}
+p {
+  margin: 20px;
+}
+.burgerBtn {
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.burgerBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+}
+.burgerBtn span {
+  position: absolute;
+  top: 9px;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+}
+.burgerBtn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+}
