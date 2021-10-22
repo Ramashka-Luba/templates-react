@@ -2,6 +2,11 @@
 @import "./../../scss/abstracts/mixins/mixins";
 @import "./../../scss/abstracts/variables/variables";
 
+.wrapper {
+  height: 50vh;
+  border: 1px solid red;
+  overflow: scroll;
+}
 nav {
   height: 50px;
   width: 100%;
@@ -12,7 +17,7 @@ nav {
   align-items: center;
 }
 main {
-  padding: 50px;
+  padding: 50px 50px 20px 50px;
 }
 p {
   margin: 20px;

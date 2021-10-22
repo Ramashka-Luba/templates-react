@@ -3,12 +3,12 @@
 @import "./../../scss/abstracts/variables/variables";
 
 .decor {
-margin-top: 70px;
-
+    padding: 70px 0;
     max-width: 710px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border: 1px solid red;
 }
 
 .shape1 {

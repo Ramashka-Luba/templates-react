@@ -2,9 +2,13 @@
 @import "./../../scss/abstracts/mixins/mixins";
 @import "./../../scss/abstracts/variables/variables";
 
-.button {
-    margin: 20px;
+.wrapper {
+border: 1px solid red;
+padding: 30px;
+background-color: rgb(8, 8, 112);
+}
 
+.button {
     max-width: 315px;
     width: 100%;
     height: 70px;

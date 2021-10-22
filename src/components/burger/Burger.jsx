@@ -20,6 +20,7 @@ const Burger = () => {
                     {value:"Магазин",href:"/shop"}]
 
     return (
+        <div className={s.wrapper}>
         <div className={s.burger}>
             <nav>
                 <div className={s.burgerBtn} onClick={() => setMenuActive(!menuActive)}>
@@ -79,6 +80,7 @@ const Burger = () => {
                     Vero atque adipisci voluptate dolor similique molestias! Dolorem, necessitatibus molestiae nostrum aut qui commodi voluptatum! Pariatur assumenda corrupti tempore optio perspiciatis nam voluptas aperiam animi mollitia voluptatibus, labore unde quo.</p>
             </main>
             <Menu active={menuActive} setActive={setMenuActive} header={"Бургер меню"} items={items} />
+        </div>
         </div>
     );
 }

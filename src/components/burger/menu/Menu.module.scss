@@ -1,7 +1,7 @@
 .menu {
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     top:  50px;
     left: 0;
 
@@ -11,7 +11,7 @@
 .menuActive {
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: calc(50vh - 50px);
     top:  50px;
     left: 0;
     transform: translateX(0);
@@ -20,7 +20,7 @@
 }
 .blur {
     width: 100vw;
-    height: 100vh;
+    height: calc(50vh - 50px);
     backdrop-filter: blur(2px); 
     position: absolute;
     left: 30%;
