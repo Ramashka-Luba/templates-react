@@ -5,6 +5,7 @@ import Button1 from './components/button1/Button1';
 import Button2 from './components/button2/Button2';
 import Checkbox from './components/checkbox/Checkbox';
 import Decor1 from './components/decor1/Decor1';
+import Wave from './components/wave/Wave';
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
       <Decor1 />
       <Button2 />
       <Checkbox/>
+      <Wave/>
 
     </div>
   );

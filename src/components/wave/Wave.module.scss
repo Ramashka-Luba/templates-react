@@ -1,0 +1,48 @@
+.wrapper {
+    padding: 30px 30px 30px 100px;
+    border: 1px solid red;
+    background-color: black;
+}
+.inner {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 5px solid #168a12
+    
+}
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    position: relative;
+    overflow: hidden; //чтобы скрыть то, что выходит за пределы круга
+    border: 5px solid #061f05;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    width: 200%;
+    height: 200%;
+    left: -50%;
+
+    background: rgba(85, 245, 11, 0.5);
+    box-shadow: 0 0 20px #11e411;
+
+    border-radius: 40%;
+    animation: rotate 10s linear forwards infinite;
+}
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.circle span {
+    font-size: 100px;
+    color: #11e4117a;
+}
