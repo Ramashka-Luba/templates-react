@@ -1,5 +1,222 @@
+
+//////// 1  checkbox при помощи картинок //////// 
 .wrapper {
 	border: 1px solid red;
 	padding: 30px;
 }
+.check {
+	display: block;
+	margin-bottom: 0.7rem;
+	font-size: 1.9rem;
+	padding-left: 2rem;
+}
+.check__input {
+	appearance: none; //прячем чесбокс, ни в коем случае не display: none;
+	// position: absolute; // вставляем в обычногм HTM, т.к. там появляется пробел
 
+	//прячем для E11, такой способ называется visually-hidden
+	// width: 1px;
+	// height: 1px;
+	// overflow: hidden;
+	// clip: (0 0 0 0);
+}
+.check__box {
+	position: absolute;
+	width: 1.9rem;
+	height: 1.9rem;
+	//off
+	background-image: url(./../../assets/images/checkbox/off.svg); 
+	margin-left: -2rem;
+}
+//Показываем состояния через импорт картинок в CSS
+// Checked //
+.check__input:checked + .check__box {
+	background-image: url(./../../assets/images/checkbox/on.svg);
+}
+// Focused //
+.check__input:focus + .check__box {
+	background-image: url(./../../assets/images/checkbox/off_focused.svg);
+}
+.check__input:checked:focus+ .check__box {
+	background-image: url(./../../assets/images/checkbox/on_focused.svg);
+}
+// Disabled //
+.check__input:disabled + .check__box {
+	background-image: url(./../../assets/images/checkbox/off_disable.svg);
+}
+.check__input:checked:disabled+ .check__box {
+	background-image: url(./../../assets/images/checkbox/on_disable.svg);
+}
+
+
+
+
+
+//////// 2  checkbox при помощи картинок https://yoksel.github.io/url-encoder/ru///////// 
+.wrapper2 {
+	border: 1px solid red;
+	padding: 30px;
+}
+.check2 {
+	display: block;
+	margin-bottom: 0.7rem;
+	font-size: 1.9rem;
+	padding-left: 2rem;
+}
+.check__input2 {
+	appearance: none; //прячем чесбокс, ни в коем случае не display: none;
+	// position: absolute; // вставляем в обычногм HTM, т.к. там появляется пробел
+
+	//прячем для E11, такой способ называется visually-hidden
+	// width: 1px;
+	// height: 1px;
+	// overflow: hidden;
+	// clip: (0 0 0 0);
+}
+.check__box2 {
+	position: absolute;
+	width: 1.9rem;
+	height: 1.9rem;
+	//off 
+	background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3' y='3' width='14' height='14' rx='2' stroke='%233869EA' stroke-width='2'/%3E%3C/svg%3E");
+	margin-left: -2rem;
+}
+
+// Показываем состояния через импорт SVG при помощи  https://yoksel.github.io/url-encoder/ru/ ////////////
+// 	// заходим в SVG и копируем
+// 	// дальше заходим в сервис https://yoksel.github.io/url-encoder/ru/ и вставляем в окно наш SVG
+// 	// дальше копируем код для CSS и вставляем сюда
+
+// Checked //
+.check__input2:checked + .check__box2 {
+	//on
+	background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2' y='2' width='16' height='16' rx='3' fill='%233869EA'/%3E%3Cpath d='M6 9.61154L10 12.6115L14.5 5.61154' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+}
+// Focused //
+.check__input2:focus + .check__box2 {
+//off_focused
+	background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3' y='3' width='14' height='14' rx='2' stroke='%233869EA' stroke-width='2'/%3E%3Crect x='1.25' y='1.25' width='17.5' height='17.5' rx='3.75' stroke='%2328C24A' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+.check__input2:checked:focus+ .check__box2 {
+	//on_focused
+	background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1.05556' y='1.05556' width='16.8889' height='16.8889' rx='3' fill='%233869EA'/%3E%3Crect x='0.75' y='0.75' width='17.5' height='17.5' rx='3.25' stroke='%2328C24A' stroke-width='1.5'/%3E%3Cpath d='M5.27777 9.08996L9.5 12.2566L14.25 4.86774' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+}
+// Disabled //
+.check__input2:disabled + .check__box2 {
+	//off_disable
+	background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3' y='3' width='14' height='14' rx='2' stroke='%2390939A' stroke-width='2'/%3E%3C/svg%3E");
+}
+.check__input2:checked:disabled+ .check__box2 {
+	//on_disable
+	background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2' y='2' width='16' height='16' rx='3' fill='%2390939A'/%3E%3Cpath d='M6 9.61154L10 12.6115L14.5 5.61154' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");
+}
+
+
+
+
+//////// 3  checkbox при помощи обычного CSS///////// 
+.wrapper3 {
+	border: 1px solid red;
+	padding: 30px;
+}
+.check3 {
+	display: block;
+	margin-bottom: 0.7rem;
+	font-size: 1.9rem;
+	padding-left: 2rem;
+}
+.check__input3 {
+	appearance: none; //прячем чесбокс, ни в коем случае не display: none;
+	// position: absolute; // вставляем в обычногм HTM, т.к. там появляется пробел
+
+	//прячем для E11, такой способ называется visually-hidden
+	// width: 1px;
+	// height: 1px;
+	// overflow: hidden;
+	// clip: (0 0 0 0);
+}
+.check__box3 {
+	position: absolute;
+	width: 1.6rem;
+	height: 1.6rem;
+	box-shadow: 0 0 0 0.2rem #4A90E2;
+	border-radius: 0.3rem;
+	margin-top: 0.2rem;
+	margin-left: -2rem;
+}
+// Checked //
+.check__input3:checked + .check__box3 {
+	//on
+	background-color: #4A90E2;
+	background-image: url(./../../assets/images/checkbox/check.svg);
+}
+// Focused //
+.check__input3:focus + .check__box3 {
+	//off_focused
+	box-shadow: 
+		0 0 0 0.2rem #4A90E2,
+		0 0 0 0.4rem #28C24A,
+}
+// Disabled //
+.check__input3:disabled + .check__box3 {
+	//off_disable
+	box-shadow: 0 0 0 0.2rem #90939A;
+}
+.check__input3:checked:disabled+ .check__box3 {
+	//on_disable
+	background-color: #90939A;
+}
+
+
+
+//////// 4  checkbox при помощи инлайнового SVG ////////
+.wrapper4 {
+	border: 1px solid red;
+	padding: 30px;
+}
+.check4 {
+	display: block;
+	margin-bottom: 0.7rem;
+	font-size: 1.9rem;
+	padding-left: 2rem;
+}
+.check__input4 {
+	position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.check__box4 {
+	position: absolute;
+	margin-left: -1.2em;
+	width: 1em;
+	height: 1em;
+}
+.check__focus4 {
+	fill: none;
+}
+.check__square4 {
+	fill: #ffffff;
+	stroke: #4a90e2;
+	stroke-width: 2px;
+}
+.check__mark4 {
+	fill: none;
+	stroke: #ffffff;
+	stroke-width: 3px;
+}
+/* Checked */
+.check__input4:checked + * .check__square4 {
+	fill: #4a90e2;
+}
+/* Focused */
+.check__input4:focus + * .check__focus4 {
+	fill: #7ed321;
+}
+/* Disabled */
+.check__input4:disabled + * .check__square4 {
+	stroke: #9b9b9b;
+}
+.check__input4:checked:disabled + * .check__square4 {
+	fill: #9b9b9b;
+}
