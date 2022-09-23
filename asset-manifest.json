@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/templates-react/static/css/main.f9de0802.chunk.css",
-    "main.js": "/templates-react/static/js/main.e1b4f889.chunk.js",
-    "main.js.map": "/templates-react/static/js/main.e1b4f889.chunk.js.map",
-    "runtime-main.js": "/templates-react/static/js/runtime-main.49052236.js",
-    "runtime-main.js.map": "/templates-react/static/js/runtime-main.49052236.js.map",
-    "static/js/2.83fb029b.chunk.js": "/templates-react/static/js/2.83fb029b.chunk.js",
-    "static/js/2.83fb029b.chunk.js.map": "/templates-react/static/js/2.83fb029b.chunk.js.map",
-    "static/js/3.baf08b00.chunk.js": "/templates-react/static/js/3.baf08b00.chunk.js",
-    "static/js/3.baf08b00.chunk.js.map": "/templates-react/static/js/3.baf08b00.chunk.js.map",
+    "main.css": "/templates-react/static/css/main.c74a4412.chunk.css",
+    "main.js": "/templates-react/static/js/main.33790efe.chunk.js",
+    "main.js.map": "/templates-react/static/js/main.33790efe.chunk.js.map",
+    "runtime-main.js": "/templates-react/static/js/runtime-main.d10812f7.js",
+    "runtime-main.js.map": "/templates-react/static/js/runtime-main.d10812f7.js.map",
+    "static/js/2.fa9bd659.chunk.js": "/templates-react/static/js/2.fa9bd659.chunk.js",
+    "static/js/2.fa9bd659.chunk.js.map": "/templates-react/static/js/2.fa9bd659.chunk.js.map",
+    "static/js/3.65a6b064.chunk.js": "/templates-react/static/js/3.65a6b064.chunk.js",
+    "static/js/3.65a6b064.chunk.js.map": "/templates-react/static/js/3.65a6b064.chunk.js.map",
     "index.html": "/templates-react/index.html",
-    "static/css/main.f9de0802.chunk.css.map": "/templates-react/static/css/main.f9de0802.chunk.css.map",
-    "static/js/2.83fb029b.chunk.js.LICENSE.txt": "/templates-react/static/js/2.83fb029b.chunk.js.LICENSE.txt",
+    "static/css/main.c74a4412.chunk.css.map": "/templates-react/static/css/main.c74a4412.chunk.css.map",
+    "static/js/2.fa9bd659.chunk.js.LICENSE.txt": "/templates-react/static/js/2.fa9bd659.chunk.js.LICENSE.txt",
+    "static/media/IT.cde92fb1.jpg": "/templates-react/static/media/IT.cde92fb1.jpg",
     "static/media/App.scss": "/templates-react/static/media/Poppins-SemiBold.f486b91d.ttf",
     "static/media/Checkbox.module.scss": "/templates-react/static/media/on_focused.d7ad5a71.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.49052236.js",
-    "static/js/2.83fb029b.chunk.js",
-    "static/css/main.f9de0802.chunk.css",
-    "static/js/main.e1b4f889.chunk.js"
+    "static/js/runtime-main.d10812f7.js",
+    "static/js/2.fa9bd659.chunk.js",
+    "static/css/main.c74a4412.chunk.css",
+    "static/js/main.33790efe.chunk.js"
   ]
 }
