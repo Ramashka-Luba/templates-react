@@ -1,0 +1,13 @@
+.wrapper {
+    padding: 30px 30px 30px 100px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.wrapImg {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+    position: relative;
+    border: 1px solid red;
+}
+
+
+.wrapImg {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
