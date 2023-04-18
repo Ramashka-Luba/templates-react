@@ -14,7 +14,12 @@ import { TextSVG3 } from './components/textSVG3/textSVG3';
 
 import IT from "./assets/images/textSVG/IT.jpg"
 import { Link1 } from './components/link1/Link1';
-import { CarouselItem } from './components/carouselItem/CarouselItem';
+import { CarouselItemBase } from './components/carousel-base/carouselItemBase/CarouselItemBase';
+// import { CarouselItemCompound } from './components/carousel-compound/CarouselItemCompound';
+
+// import {CarouselCompound} from "./components/carousel-compound"
+
+
 
 
 const App = () => {
@@ -40,7 +45,24 @@ const App = () => {
       <TextSVG2/>
       <TextSVG3/>
       <Link1/>
-      <CarouselItem/>
+      <CarouselItemBase/>
+      {/* <CarouselItemCompound/> */}
+
+
+      {/* <CarouselCompound infinite>
+            <CarouselCompound.Page>
+                <div className={`${s.item} ${s.item1}`}>Item 1</div>
+            </CarouselCompound.Page>
+
+            <CarouselCompound.Page>
+                <div className={`${s.item} ${s.item2}`}>Item 2</div>
+            </CarouselCompound.Page>   
+
+            <CarouselCompound.Page>
+                <div className={`${s.item} ${s.item3}`}>Item 3</div>
+            </CarouselCompound.Page> 
+        </CarouselCompound> */}
+      
     </div>
   );
 }

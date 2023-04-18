@@ -12,7 +12,7 @@ const Menu = ({ header, items, active, setActive }) => {
                 <div className={s.menuHeader}>{header}</div>
                 <ul>
                     {items.map(item =>
-                        <li>
+                        <li >
                             <a href={item.href}>{item.value}</a>
                             {/* <span className={s.materialIcons}>{item.icon}</span> */}
                             {/* <span class="material-icons">{item.icon}</span> */}

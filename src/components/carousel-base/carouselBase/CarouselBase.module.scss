@@ -1,0 +1,28 @@
+.mainContainer {
+    height: 150px;
+    width: 450px;
+
+    display: flex;
+    align-items: center;
+}
+
+.window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    // overflow: scroll;
+}
+
+.allPagesContainer {
+    height: 100%;
+    display: flex;
+
+    transition: translate;  //добавляем анимациюна прокрутку
+    transition-property: transform; //то что мы заюзали в carousel в инлайновых стилях
+    transition-duration: 300ms; //время анимации
+    transition-timing-function: ease-in-out; //указываем как прокручивается
+}
+
+.arrow {
+    cursor: pointer;
+}

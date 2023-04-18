@@ -1,11 +1,11 @@
 import { useEffect, useState, Children, cloneElement } from "react";
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; //библиотека иконок
-import s from "./Carousel.module.scss"
+import s from "./CarouselBase.module.scss"
 
 
 const PAGE_WIDTH = 450 //переменная для ширины окна
 
-export const Carousel = ({children}) => {
+export const CarouselBase = ({children}) => {
 
     const [pages, setPages] = useState([]);
     const [offset, setOffset] = useState(0) //0 - изначальная ширина окна
@@ -57,7 +57,7 @@ export const Carousel = ({children}) => {
 
     return (
         <div className={s.mainContainer}>
-            <FaChevronLeft className={s.arrow} onClick={handleLeftClick}/>
+             <FaChevronLeft className={s.arrow} onClick={handleLeftClick}/>   {/*стрелочка влево */}
             <div className={s.window}>
                 <div className={s.allPagesContainer} 
                     style = {{ transform: `translateX(${offset}px)`}} //прокрутка страниц
@@ -65,7 +65,7 @@ export const Carousel = ({children}) => {
                     {pages}
                 </div>
             </div>
-            <FaChevronRight className={s.arrow} onClick={handleRightClick}/>
+            <FaChevronRight className={s.arrow} onClick={handleRightClick}/>  {/*стрелочка влево */}
         </div>
     );
 }
